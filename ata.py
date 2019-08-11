@@ -24,14 +24,15 @@ def tools():
             for actor in tool.actors:
                 print("Actor name: {}".format(actor.name))
                 file.write("Actor name: {}\n".format(actor.name))
-                
+        else:
+            continue
     file.close()
 
 def actors():
     file = open("ata.txt", "a")
     act = input( "\nActor name to lookup: ")
     
-    file.write("\nActor Name: {}\n".format (act))
+    file.write("\nTechniques for Actor: {}\n".format (act))
     for actor in attack.actors:
          if act in actor.name:
             for technique in actor.techniques:
@@ -45,7 +46,7 @@ def technique():
     file = open("ata.txt", "a")
     mit = input("\n Technique to lookup: ")
     
-    file.write("\n Technique Name:{}\n".format(mit))
+    file.write("\n Technique Mitigation Description:{}\n".format(mit))
     for technique in attack.techniques:
         if mit in technique.name:
             for mitigation in technique.mitigation:
