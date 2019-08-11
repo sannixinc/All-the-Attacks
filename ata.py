@@ -5,11 +5,11 @@ import pyattck
 
 parser = argparse.ArgumentParser(
     prog="all the attacks",
-    description=""
+    description="Tool to capture the actor nam, their techniques and mitigation workflows."
 )
 attack = pyattck.Attck()
 
-parser.add_argument("tool", help="")
+parser.add_argument("tool", help="tool to look up")
 
 args = parser.parse_args()
 
