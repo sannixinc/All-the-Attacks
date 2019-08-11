@@ -1,0 +1,2 @@
+Tool name: netstat
+Actor Alias: ['OilRig', 'IRN2', 'HELIX KITTEN', 'APT34']
